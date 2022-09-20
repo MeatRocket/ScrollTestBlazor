@@ -1,0 +1,13 @@
+﻿@using ScrollTest.Data
+
+<div class="img-container" @ontouchstart="((e) => HandleStart(e))" @ontouchend="((e) => HandleEnd(e))">
+    <ul>
+        @foreach (ListItem item in ListItems)
+        {
+            <li class="@item.ClassName" @onclick="(() => ActivateItem(item))">
+                <img src="@item.ImgUrl" />
+            </li>
+        }
+
+    </ul>
+</div>

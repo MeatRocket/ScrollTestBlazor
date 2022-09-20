@@ -1,0 +1,58 @@
+:root {
+  --lerp-0: 1;
+  --lerp-1: 0.5787037;
+  --lerp-2: 0.2962963;
+  --lerp-3: 0.125;
+  --lerp-4: 0.037037;
+  --lerp-5: 0.0046296;
+  --lerp-6: 0;
+}
+:root body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+:root body .parent {
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #000;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+}
+:root body .parent div {
+  height: 100vh;
+  scroll-snap-align: start;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+:root body .parent div.Blue {
+  background-color: blue;
+}
+:root body .parent div.Blue .img-container {
+  display: grid;
+  place-items: center;
+  max-height: 70vh;
+  user-select: none;
+}
+:root body .parent div.Blue .img-container ul {
+  display: flex;
+  width: calc(70% - 2rem);
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  justify-content: center;
+  gap: 20px;
+}
+:root body .parent div.Red {
+  background-color: red;
+}
+:root body .parent div.Purple {
+  background-color: purple;
+}
+:root body .parent div.Green {
+  background-color: green;
+}
+:root body .parent div.Yellow {
+  background-color: yellow;
+}

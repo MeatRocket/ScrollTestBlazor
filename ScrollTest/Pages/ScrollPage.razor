@@ -1,0 +1,33 @@
+﻿@page "/scroll"
+@using ScrollTest.Data
+
+<link href="css/scroll.css" rel="stylesheet" />
+<div class="parent">
+    <div class="Blue">
+        <ScrollComponent ListItems="@Items"></ScrollComponent>
+    </div>
+
+    <div class="Red">
+    </div>
+
+    <div class="Purple">
+    </div>
+
+    <div class="Green">
+    </div>
+
+    <div class="Yellow">
+    </div>
+</div>
+
+@code {
+    public List<ListItem> Items { get; set; } = new()
+    {
+        new() { ImgUrl="img/1.jpg" },
+        new() { ImgUrl="img/3.jpg" },
+        new() { ImgUrl="img/1.jpg" },
+        new() { ImgUrl="img/3.jpg" },
+        new() { ImgUrl="img/1.jpg" },
+        new() { ImgUrl="img/3.jpg" }
+    };
+}

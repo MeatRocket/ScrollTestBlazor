@@ -1,0 +1,12 @@
+﻿@inject IJSRuntime JSRuntime
+
+
+<h3>SliderImageComparisonComponent</h3>
+
+
+<div class="container">
+    <img src=@BeforeURl>
+    <img id="my-img" src=@AfterUrl>
+    <input type="range" min="0" max="100" value="50" id="slider" @oninput="OnSliderChangeAsync">
+</div>
+

@@ -1,0 +1,71 @@
+﻿:root {
+    --lerp-0: 1;
+    --lerp-1: 0.5787037;
+    --lerp-2: 0.2962963;
+    --lerp-3: 0.125;
+    --lerp-4: 0.037037;
+    --lerp-5: 0.0046296;
+    --lerp-6: 0;
+
+
+
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x:hidden;
+        .parent {
+            height: 100vh;
+            margin: 0 auto;
+            background-color: #000;
+            overflow: auto;
+            scroll-snap-type: y mandatory;
+
+            div {
+                height: 100vh;
+                scroll-snap-align: start;
+                align-items: center;
+                justify-content: center;
+                color: white;
+
+                &.Blue {
+                    background-color: blue;
+
+                    .img-container {
+                        display: grid;
+                        place-items: center;
+                        max-height: 70vh;
+                        user-select: none;
+
+
+                        ul {
+                            display: flex;
+                            width: calc(70% - 2rem);
+                            padding: 0;
+                            margin: 0;
+                            list-style-type: none;
+                            justify-content: center;
+                            gap: 20px;
+
+                        }
+                    }
+                }
+
+                &.Red {
+                    background-color: red;
+                }
+
+                &.Purple {
+                    background-color: purple;
+                }
+
+                &.Green {
+                    background-color: green;
+                }
+
+                &.Yellow {
+                    background-color: yellow;
+                }
+            }
+        }
+    }
+}

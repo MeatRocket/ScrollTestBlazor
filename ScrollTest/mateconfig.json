@@ -1,0 +1,24 @@
+{
+  "files": [
+    {
+      "output": "wwwroot/css/scroll.css",
+      "input": "src/less/scroll.less"
+    },
+    {
+      "output": "wwwroot/js/scroll.js",
+      "input": "src/ts/scroll.ts"
+    },
+    {
+      "output": "wwwroot/js/sliderImage.js",
+      "input": "src/ts/sliderImage.ts"
+    },
+    {
+      "output": "Pages/ScrollComponent.razor.css",
+      "input": "src/less/ScrollComponent.less"
+    },
+    {
+      "output": "Pages/SliderImageComparisonComponent.razor.css",
+      "input": "src/less/SliderImageComponent.less"
+    }
+  ]
+}
